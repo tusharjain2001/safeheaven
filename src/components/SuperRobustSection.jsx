@@ -85,6 +85,7 @@ const featureCards = [
 function SuperRobustSection() {
   return (
     <section
+      id="super-robust"
       className="w-full py-16 sm:py-20"
       style={{ backgroundColor: "#D7EEFF", fontFamily: "Inter, sans-serif" }}
     >

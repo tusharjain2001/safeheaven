@@ -1,7 +1,12 @@
 import { useState } from "react";
 import logo from "../assets/logo.svg";
 
-const navItems = ["Why Us", "Customisation", "What's Included", "Contact Us"];
+const navItems = [
+  { label: "Why Us", href: "#why-safe-haven" },
+  { label: "Customisation", href: "#super-robust" },
+  { label: "What's Included", href: "#high-physical-support" },
+  { label: "Contact Us", href: "#footer" },
+];
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -18,7 +23,7 @@ function Navbar() {
         </a>
         <div className="flex items-center gap-2">
           <a
-            href="#"
+            href="#footer"
             className="inline-flex items-center justify-center rounded-xl bg-[#003AA0] px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#002f81]"
           >
             Enquire Now
@@ -48,23 +53,23 @@ function Navbar() {
         <nav className="mt-4 flex flex-col gap-1 border-t border-[#003AA0]/10 pt-4 lg:hidden">
           {navItems.map((item) => (
             <a
-              key={item}
-              href="#"
+              key={item.label}
+              href={item.href}
               onClick={() => setOpen(false)}
               className="rounded-lg px-3 py-2.5 text-[15px] font-medium text-[#191816] transition-colors hover:bg-[#003AA0]/5 hover:text-[#003AA0]"
             >
-              {item}
+              {item.label}
             </a>
           ))}
           <div className="mt-3 flex flex-col gap-2 border-t border-[#003AA0]/10 pt-3">
             <a
-              href="#"
+              href="#super-robust"
               className="inline-flex items-center justify-center rounded-xl border border-[#003AA0] px-5 py-3 text-sm font-semibold text-[#003AA0] transition-all hover:bg-[#003AA0] hover:text-white"
             >
               Let&apos;s Customise
             </a>
             <a
-              href="#"
+              href="#footer"
               className="inline-flex items-center justify-center rounded-xl bg-[#003AA0] px-5 py-3 text-sm font-semibold text-white transition-all hover:bg-[#002f81]"
             >
               Enquire Now
@@ -83,23 +88,23 @@ function Navbar() {
         <div className="flex flex-1 items-center justify-center gap-x-10 px-10">
           {navItems.map((item) => (
             <a
-              key={item}
-              href="#"
+              key={item.label}
+              href={item.href}
               className="text-[15px] font-medium text-[#191816] transition-colors hover:text-[#003AA0]"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
         <div className="flex shrink-0 items-center gap-3">
           <a
-            href="#"
+            href="#super-robust"
             className="inline-flex items-center justify-center rounded-xl border border-[#003AA0] px-5 py-3 text-sm font-semibold text-[#003AA0] transition-all duration-200 hover:bg-[#003AA0] hover:text-white active:scale-95"
           >
             Let&apos;s Customise
           </a>
           <a
-            href="#"
+            href="#footer"
             className="inline-flex items-center justify-center rounded-xl bg-[#003AA0] px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#002f81] hover:shadow-lg active:scale-95"
           >
             Enquire Now

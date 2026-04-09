@@ -35,6 +35,7 @@ function YoutubeIcon() {
 function Footer() {
   return (
     <footer
+      id="footer"
       className="w-full text-white"
       style={{ backgroundColor: "#0A1553", fontFamily: "Inter, sans-serif" }}
     >

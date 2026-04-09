@@ -86,6 +86,7 @@ const featureCards = [
 function HpsSection() {
   return (
     <section
+      id="high-physical-support"
       className="w-full py-16 sm:py-20"
       style={{ backgroundColor: "#CFEBB6", fontFamily: "Inter, sans-serif" }}
     >

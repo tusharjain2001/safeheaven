@@ -67,6 +67,7 @@ function PhotoCard({ image, icon, caption }) {
 function WhySafeHavenSection() {
   return (
     <section
+      id="why-safe-haven"
       className="w-full bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
       style={{ fontFamily: "Inter, sans-serif" }}
     >

@@ -223,7 +223,7 @@ function HeroSection() {
               <input
                 id="location"
                 type="text"
-                placeholder="San Diego"
+                placeholder="Queensland"
                 className="mt-1 h-11 w-full rounded-[4px] border border-transparent bg-[#F1F1F1] px-3 text-[0.9rem] text-[#333] placeholder:text-[#A0A0A8] focus:border-[#3A95E8] focus:bg-white focus:outline-none"
               />
             </div>

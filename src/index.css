@@ -1,4 +1,7 @@
 @import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
 
 /* ── Marquee animations ─────────────────────────────────────────────────── */
 /* Marquee uses --marquee-width (exact px) set inline per element */
