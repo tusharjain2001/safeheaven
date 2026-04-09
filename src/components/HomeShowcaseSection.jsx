@@ -8,10 +8,10 @@ function HomeShowcaseSection() {
     >
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_1.18fr] lg:gap-14">
         <div className="max-w-xl">
-          <h2 className="text-4xl font-semibold leading-tight tracking-tight text-[#191816] sm:text-5xl">
+          <h2 className="text-[1.9rem] font-semibold leading-tight tracking-tight text-[#191816] sm:text-4xl lg:text-5xl">
             Let&apos;s design A HOME, that is truly for YOU
           </h2>
-          <p className="mt-5 max-w-lg text-lg leading-8 text-[#191816]/85">
+          <p className="mt-5 max-w-lg text-base leading-7 text-[#191816]/85 sm:text-lg sm:leading-8">
             Our team is ready to listen to your needs, walk you through our
             available properties, and begin creating a home that is truly
             yours. The first step is simply reaching out.

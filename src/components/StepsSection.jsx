@@ -26,7 +26,7 @@ function StepsSection() {
       className="w-full px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14"
       style={{ backgroundColor: "#0085EA", fontFamily: "Inter, sans-serif" }}
     >
-      <div className="mx-auto grid max-w-6xl gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-3">
         {stepCards.map((card) => (
           <article
             key={card.text}

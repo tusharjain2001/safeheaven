@@ -5,7 +5,7 @@ function DesignSection() {
       style={{ backgroundColor: "#0A1553", fontFamily: "Inter, sans-serif" }}
     >
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-        <h2 className="max-w-2xl text-3xl font-semibold tracking-tight sm:text-[2.1rem]">
+        <h2 className="max-w-2xl text-2xl font-semibold tracking-tight sm:text-3xl lg:text-[2.1rem]">
           Let&apos;s design a home, that is truly for YOU
         </h2>
         <p className="mt-5 max-w-xl text-sm leading-6 text-white/80 sm:text-base">

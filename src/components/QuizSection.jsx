@@ -5,11 +5,11 @@ function QuizSection() {
     <section className="w-full" style={{ fontFamily: "Inter, sans-serif" }}>
       <div className="grid w-full items-stretch lg:grid-cols-[1.05fr_0.95fr]">
         <div
-          className="flex items-center px-6 py-12 text-white sm:px-8 lg:px-12 xl:px-16"
+          className="flex items-center px-5 py-10 text-white sm:px-8 sm:py-12 lg:px-12 xl:px-16"
           style={{ backgroundColor: "#0049C8" }}
         >
-          <div className="max-w-xl">
-            <h2 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          <div className="w-full max-w-xl">
+            <h2 className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
               Start Designing Your Safe Haven Home Today.
             </h2>
             <p className="mt-5 max-w-lg text-base leading-7 text-white/85">
@@ -36,7 +36,7 @@ function QuizSection() {
           </div>
         </div>
 
-        <div className="min-h-[320px]">
+        <div className="min-h-[240px] sm:min-h-[320px]">
           <img
             src={gradientHome}
             alt="Safe Haven home with gradient overlay"

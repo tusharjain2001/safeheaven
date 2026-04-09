@@ -73,14 +73,15 @@ function TestimonialsSection() {
           What Residents Say
         </span>
         <h2
-          className="mt-5 text-4xl font-bold leading-tight text-[#0A1553] sm:text-[3.5rem] sm:leading-[1.1]"
+          className="mt-5 text-[1.9rem] font-bold leading-tight text-[#0A1553] sm:text-4xl lg:text-[3.5rem] lg:leading-[1.1]"
           style={{ fontFamily: "Public Sans, sans-serif" }}
         >
           Hear It From The People Who Call
-          <br />
+          <span className="hidden sm:inline"><br /></span>
+          <span className="sm:hidden"> </span>
           Safe Haven Home
         </h2>
-        <p className="mt-4 text-lg text-[#0A1553]">
+        <p className="mt-4 text-base text-[#0A1553] sm:text-lg">
           Real words from real participants living in their Safe Haven homes.
         </p>
       </div>

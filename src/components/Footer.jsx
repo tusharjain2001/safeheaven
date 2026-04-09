@@ -30,53 +30,53 @@ function Footer() {
       className="w-full text-white"
       style={{ backgroundColor: "#0A1553", fontFamily: "Inter, sans-serif" }}
     >
-      <div className="mx-auto max-w-7xl px-6 pt-10 pb-0 lg:px-8 xl:px-16">
+      <div className="mx-auto max-w-7xl px-5 pt-10 pb-0 sm:px-6 lg:px-8 xl:px-16">
 
-        {/* Top row: Logo left | Enquire Now bar + disclaimer right */}
-        <div className="grid items-start gap-8 lg:grid-cols-[auto_1fr]">
+        {/* Top row: Logo | Enquire bar + disclaimer */}
+        <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[auto_1fr] lg:items-start lg:gap-8">
           <img
             src={logo}
             alt="Safe Haven Housing"
-            className="h-20 w-auto"
+            className="h-16 w-auto sm:h-20"
           />
 
-          {/* Right column: Enquire bar + disclaimer — all pinned to the right */}
-          <div className="flex flex-col items-end gap-3">
-            {/* Enquire Now bar */}
+          {/* Right column: enquire bar + disclaimer */}
+          <div className="flex flex-col gap-3 lg:items-end">
+            {/* Enquire Now bar — full-width on mobile, max-capped on desktop */}
             <div
-              className="flex items-center justify-between rounded-2xl border border-[rgba(215,238,255,0.5)] px-2 py-3 w-[657px]"
+              className="flex w-full items-center justify-between rounded-2xl border border-[rgba(215,238,255,0.5)] px-2 py-3 lg:max-w-[657px]"
               style={{ fontFamily: "Public Sans, sans-serif" }}
             >
               <input
                 type="text"
-                placeholder="Write you message here!"
-                className="flex-1 bg-transparent px-3 py-1 text-[16px] text-white/50 placeholder:text-white/50 focus:outline-none"
+                placeholder="Write your message here!"
+                className="min-w-0 flex-1 bg-transparent px-3 py-1 text-[15px] text-white/50 placeholder:text-white/50 focus:outline-none"
               />
               <button
                 type="button"
-                className="rounded-xl bg-[#FCFAFA] px-5 py-2 text-[16px] font-normal text-[#0A1553] transition-opacity hover:opacity-90"
+                className="shrink-0 rounded-xl bg-[#FCFAFA] px-4 py-2 text-[15px] font-normal text-[#0A1553] transition-opacity hover:opacity-90"
               >
                 Enquire Now
               </button>
             </div>
 
-            {/* Disclaimer — full width, right-aligned text, 2 lines */}
+            {/* Disclaimer */}
             <p
-              className="w-full text-right text-[15px] font-semibold text-[#a2cbeb] mt-[40px]"
+              className="text-[13px] font-semibold leading-6 text-[#a2cbeb] sm:text-[15px] lg:mt-8 lg:text-right"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Safe Haven Housing is not an SDA provider, we provide customised Super Robust and High Physical
-              <br />
-              Support SDA homes. We collaborate and align with the right SDA provider to look after the home.
+              <br className="hidden sm:block" />
+              {" "}Support SDA homes. We collaborate and align with the right SDA provider to look after the home.
             </p>
           </div>
         </div>
 
         {/* Main content: Contact left | Link columns right */}
-        <div className="mt-10 grid gap-8 lg:grid-cols-[295px_1fr]">
+        <div className="mt-8 grid gap-8 lg:grid-cols-[295px_1fr] lg:mt-10">
 
-          {/* Left: Contact — 295px wide, 12px gap, DM Sans 18px */}
-          <div className="flex flex-col gap-[12px] text-[18px]" style={{ fontFamily: "DM Sans, sans-serif" }}>
+          {/* Contact */}
+          <div className="flex flex-col gap-[12px] text-[16px] sm:text-[18px]" style={{ fontFamily: "DM Sans, sans-serif" }}>
             <div>
               <p className="font-bold leading-normal">Phone:</p>
               <a href="tel:1300111744" className="font-normal leading-normal">1300 111 744</a>
@@ -87,7 +87,7 @@ function Footer() {
               <p className="font-bold leading-normal">Email:</p>
               <a
                 href="mailto:admin@safehavenhousing.com.au"
-                className="font-normal underline leading-normal"
+                className="break-all font-normal underline leading-normal"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -106,19 +106,21 @@ function Footer() {
             </a>
           </div>
 
-          {/* Right: Link columns — 64px gap between groups, Inter */}
-          <div className="flex flex-col gap-[16px] sm:flex-row sm:gap-[64px] lg:justify-end lg:py-[48px]" style={{ fontFamily: "Inter, sans-serif" }}>
-
+          {/* Link columns */}
+          <div
+            className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:justify-end lg:py-12"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
             {/* Super Robust SDA Homes */}
-            <div className="flex flex-col gap-[16px]">
-              <p className="text-[20px] font-semibold text-white">Super Robust SDA Homes</p>
-              <div className="flex gap-[16px] text-[14px] font-normal text-white">
-                <div className="flex flex-col gap-[8px] w-[140px]">
+            <div className="flex flex-col gap-4">
+              <p className="text-[18px] font-semibold text-white sm:text-[20px]">Super Robust SDA Homes</p>
+              <div className="flex gap-4 text-[13px] font-normal text-white sm:text-[14px]">
+                <div className="flex flex-col gap-[8px]">
                   <p>Security &amp; Protection</p>
                   <p>Bathrooms &amp; Toilets</p>
                   <p>Doors &amp; Access</p>
                 </div>
-                <div className="flex flex-col gap-[8px] w-[138px]">
+                <div className="flex flex-col gap-[8px]">
                   <p>Kitchen</p>
                   <p>Bedrooms &amp; Support</p>
                   <p>Assistive technology</p>
@@ -127,58 +129,45 @@ function Footer() {
             </div>
 
             {/* High Physical Support SDA homes */}
-            <div className="flex flex-col gap-[16px]">
-              <p className="text-[20px] font-semibold text-white">High Physical Support SDA homes</p>
-              <div className="flex gap-[16px] text-[14px] font-normal text-white">
-                <div className="flex flex-col gap-[8px] w-[138px]">
+            <div className="flex flex-col gap-4">
+              <p className="text-[18px] font-semibold text-white sm:text-[20px]">High Physical Support SDA homes</p>
+              <div className="flex gap-4 text-[13px] font-normal text-white sm:text-[14px]">
+                <div className="flex flex-col gap-[8px]">
                   <p>Lounge Rooms</p>
                   <p>Doors &amp; Access</p>
                   <p>Bedrooms &amp; Support</p>
                 </div>
-                <div className="flex flex-col gap-[8px] w-[164px]">
+                <div className="flex flex-col gap-[8px]">
                   <p>Home office/ Tech Room</p>
                   <p>Garage</p>
                   <p>Bathrooms &amp; Toilets</p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
       {/* Bottom bar */}
-      <div className="mt-10 border-t border-white/30">
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 px-6 py-6 sm:flex-row sm:justify-between lg:px-8 xl:px-16">
+      <div className="mt-8 border-t border-white/30 sm:mt-10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 px-5 py-6 sm:flex-row sm:justify-between sm:px-6 lg:px-8 xl:px-16">
 
           {/* Social icons */}
           <div className="flex items-center gap-3 text-white">
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
-            >
+            <a href="#" aria-label="Facebook" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25">
               <FacebookIcon />
             </a>
-            <a
-              href="#"
-              aria-label="Instagram"
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
-            >
+            <a href="#" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25">
               <InstagramIcon />
             </a>
-            <a
-              href="#"
-              aria-label="TikTok"
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
-            >
+            <a href="#" aria-label="TikTok" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25">
               <TiktokIcon />
             </a>
           </div>
 
           {/* Links + copyright */}
           <div
-            className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[20px] text-white"
+            className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[16px] text-white sm:gap-x-6 sm:text-[18px]"
             style={{ fontFamily: "DM Sans, sans-serif" }}
           >
             <div className="flex items-center gap-2">
@@ -189,11 +178,10 @@ function Footer() {
               <span className="h-1 w-1 rounded-full bg-white" />
               <a href="#">Privacy Policy</a>
             </div>
-            <p>
+            <p className="text-center">
               © 2026 <em>Safe Haven</em>. All rights reserved.
             </p>
           </div>
-
         </div>
       </div>
     </footer>

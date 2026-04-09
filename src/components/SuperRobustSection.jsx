@@ -90,16 +90,16 @@ function SuperRobustSection() {
     >
       {/* Header */}
       <div className="flex flex-col items-center px-4 text-center sm:px-6 lg:px-8">
-        <span className="inline-flex items-center rounded-full border border-[#0A1553] px-5 py-2.5 text-base text-[#0A1553]">
+        <span className="inline-flex items-center rounded-full border border-[#0A1553] px-5 py-2.5 text-sm text-[#0A1553] sm:text-base">
           Ultimate Safety. Absolute Peace of Mind
         </span>
         <h2
-          className="mt-5 text-4xl font-bold text-[#0A1553] sm:text-[3.5rem]"
+          className="mt-5 text-[1.9rem] font-bold text-[#0A1553] sm:text-4xl lg:text-[3.5rem]"
           style={{ fontFamily: "Public Sans, sans-serif" }}
         >
           Super Robust
         </h2>
-        <p className="mt-4 max-w-3xl text-lg leading-7 text-[#0A1553]">
+        <p className="mt-4 max-w-3xl text-base leading-7 text-[#0A1553] sm:text-lg">
           Some homes need to do more. Our Super Robust properties are
           thoughtfully designed to provide the highest level of protection,
           giving Participants, Careers and families the safety and reassurance
@@ -109,7 +109,7 @@ function SuperRobustSection() {
 
       {/* Photo Grid */}
       <div className="mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {photoCards.map((card) => (
             <div
               key={card.caption}
@@ -118,11 +118,11 @@ function SuperRobustSection() {
               <img
                 src={card.image}
                 alt={card.caption}
-                className="h-[280px] w-full object-cover"
+                className="h-[220px] w-full object-cover sm:h-[280px]"
               />
-              <div className="absolute bottom-3 left-3 rounded-[12px] bg-[rgba(252,250,250,0.9)] px-4 py-2">
+              <div className="absolute bottom-3 left-3 max-w-[80%] rounded-[12px] bg-[rgba(252,250,250,0.9)] px-4 py-2">
                 <p
-                  className="text-[16px] leading-10 text-[#191816]"
+                  className="text-[14px] leading-6 text-[#191816] sm:text-[16px] sm:leading-10"
                   style={{ fontFamily: "Public Sans, sans-serif" }}
                 >
                   {card.caption}
@@ -136,7 +136,7 @@ function SuperRobustSection() {
       {/* Statement */}
       <div className="mx-auto mt-14 max-w-4xl px-4 text-center sm:px-6">
         <p
-          className="text-2xl font-bold leading-snug text-[#003AA0] sm:text-[2rem]"
+          className="text-xl font-bold leading-snug text-[#003AA0] sm:text-2xl lg:text-[2rem]"
           style={{ fontFamily: "Public Sans, sans-serif" }}
         >
           Our robust homes all provide separate living, dinning and kitchen

@@ -7,7 +7,7 @@ function HeroSection() {
       className="w-full bg-[#EAF6FF] px-4 py-8 sm:px-6 sm:py-10 lg:px-8 xl:px-10"
       style={{ fontFamily: "Inter, sans-serif" }}
     >
-      <div className="mx-auto grid max-w-[1320px] items-start gap-10 lg:grid-cols-[minmax(0,600px)_490px] lg:justify-between lg:gap-14 xl:grid-cols-[minmax(0,620px)_520px]">
+      <div className="mx-auto grid max-w-[1320px] items-start gap-8 lg:grid-cols-[minmax(0,600px)_490px] lg:justify-between lg:gap-14 xl:grid-cols-[minmax(0,620px)_520px]">
         <div className="flex max-w-[620px] flex-col pt-1 lg:pt-2">
           <h1
             className="max-w-[650px] text-[2.25rem] font-bold leading-[1.2] tracking-[-0.045em] text-[#142774] sm:text-[3rem] lg:text-[3rem] xl:text-[3.25rem]"
@@ -186,8 +186,8 @@ function HeroSection() {
               </div>
             </div>
 
-            <div className="flex gap-2 items-center">
-              <p className="mb-2 text-[0.82rem] text-[#666666]">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+              <p className="text-[0.82rem] text-[#666666]">
                 Does your enquiry have SDA funding approved?
               </p>
               <div className="flex gap-2">
