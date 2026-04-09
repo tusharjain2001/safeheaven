@@ -31,7 +31,7 @@ function HeroSection() {
           </p>
 
           <div className="mt-6 w-full max-w-[580px] self-start overflow-hidden rounded-[18px] border-2 border-[#17307C] shadow-[0_10px_24px_rgba(16,35,107,0.12)] transition-shadow duration-300 hover:shadow-[0_18px_40px_rgba(16,35,107,0.22)] lg:flex-1">
-            <div className="aspect-video w-full bg-[#0A1553] lg:h-full lg:min-h-[520px] lg:aspect-auto">
+            <div className="aspect-video w-full bg-[#0A1553] lg:h-full lg:min-h-[420px] lg:aspect-auto">
               <iframe
                 className="h-full w-full"
                 src="https://www.youtube.com/embed/RAYOj94JsxI?rel=0"
