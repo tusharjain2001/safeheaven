@@ -65,85 +65,151 @@ function HeroSection() {
         </div>
 
         {/* Right: Contact Form Card */}
-        <div className="rounded-[20px] bg-white px-8 py-8 shadow-[0px_4px_16px_rgba(0,0,0,0.15)]">
-          <div>
-            <h2
-              className="text-[2rem] font-semibold leading-tight text-[#0A1553]"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              Let&apos;s design a home
-            </h2>
-            <p className="mt-1 text-xl font-medium text-[#0A1553]">
-              that truly works for you!
-            </p>
-          </div>
-
-          <hr className="my-4 border-[#0A1553]/20" />
-
-          <p className="text-xl font-normal text-[#191816]">
-            Let&apos;s find the right home for you
-          </p>
-          <p className="mt-1 text-sm text-[#666]">
+        <div className="rounded-[15px] bg-white p-8 shadow-[0px_4px_16px_rgba(0,0,0,0.15)]">
+          <h2
+            className="text-[2rem] font-medium leading-tight text-[#0A1553]"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            Let&apos;s find the right home for you!
+          </h2>
+          <p className="mt-1 text-base text-[#666]">
             Quick, free, and no obligation. Takes about 2 minutes.
           </p>
 
-          <form className="mt-5 space-y-4">
+          <hr className="my-5 border-[#0A1553]/20" />
+
+          <form className="flex flex-col gap-4">
+            {/* Row 1: First + Last Name */}
             <div className="flex gap-3">
               <div className="flex-1">
-                <label
-                  className="block text-sm text-[#666]"
-                  htmlFor="firstName"
-                >
-                  First Name
+                <label className="block text-sm text-[#666]" htmlFor="firstName">
+                  Best Contact First Name *
                 </label>
                 <input
                   id="firstName"
                   type="text"
-                  placeholder="Joanne"
-                  className="mt-1 h-14 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
+                  className="mt-1 h-12 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
                 />
               </div>
               <div className="flex-1">
-                <label
-                  className="block text-sm text-[#666]"
-                  htmlFor="lastName"
-                >
-                  Last Name
+                <label className="block text-sm text-[#666]" htmlFor="lastName">
+                  Best Contact Last Name *
                 </label>
                 <input
                   id="lastName"
                   type="text"
-                  placeholder="Smith"
-                  className="mt-1 h-14 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
+                  className="mt-1 h-12 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
                 />
               </div>
             </div>
 
+            {/* Row 2: Phone M + Phone P */}
+            <div className="flex gap-3">
+              <div className="flex-1">
+                <label className="block text-sm text-[#666]" htmlFor="phoneM">
+                  Best Phone Contact - M:
+                </label>
+                <input
+                  id="phoneM"
+                  type="tel"
+                  className="mt-1 h-12 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
+                />
+              </div>
+              <div className="flex-1">
+                <label className="block text-sm text-[#666]" htmlFor="phoneP">
+                  Best Phone Contact - P:
+                </label>
+                <input
+                  id="phoneP"
+                  type="tel"
+                  className="mt-1 h-12 w-full rounded-[5px] border border-[#ccc] bg-white px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
+                />
+              </div>
+            </div>
+
+            {/* Email */}
             <div>
               <label className="block text-sm text-[#666]" htmlFor="email">
-                Email
+                Best Email *
               </label>
               <input
                 id="email"
                 type="email"
-                placeholder="Joanne Smith@example.com"
-                className="mt-1 h-14 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
+                className="mt-1 h-12 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
               />
             </div>
 
+            {/* Enquiring as */}
             <div>
-              <label className="block text-sm text-[#666]" htmlFor="phone">
-                Phone
+              <p className="mb-2 text-sm text-[#666]">You are enquiring as?</p>
+              <div className="grid grid-cols-2 gap-2">
+                {["Participant", "Support Coordinator", "Family/Guardian", "SIL Provider"].map(
+                  (role, i) => (
+                    <label
+                      key={role}
+                      className={`flex cursor-pointer items-center justify-center rounded-full border px-4 py-2.5 text-sm font-medium transition-colors ${
+                        i === 0
+                          ? "border-[#0085EA] bg-[#D7EEFF] text-[#0085EA]"
+                          : "border-[#ccc] bg-white text-[#666] hover:border-[#0085EA] hover:bg-[#D7EEFF]/30"
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="enquiringAs"
+                        value={role}
+                        defaultChecked={i === 0}
+                        className="sr-only"
+                      />
+                      {role}
+                    </label>
+                  )
+                )}
+              </div>
+            </div>
+
+            {/* SDA Funding */}
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="text-sm text-[#666]">
+                Does your enquiry have SDA funding approved?
+              </p>
+              <div className="flex gap-2">
+                {["Yes", "No"].map((opt, i) => (
+                  <label
+                    key={opt}
+                    className={`flex cursor-pointer items-center justify-center rounded-full border px-5 py-2 text-sm font-medium transition-colors ${
+                      i === 0
+                        ? "border-[#0085EA] bg-[#D7EEFF] text-[#0085EA]"
+                        : "border-[#ccc] bg-white text-[#666] hover:border-[#0085EA] hover:bg-[#D7EEFF]/30"
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="sdaFunding"
+                      value={opt}
+                      defaultChecked={i === 0}
+                      className="sr-only"
+                    />
+                    {opt}
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            {/* Location */}
+            <div>
+              <label className="block text-sm text-[#666]" htmlFor="location">
+                Location
               </label>
               <input
-                id="phone"
-                type="tel"
-                placeholder="+61 XXXXX"
-                className="mt-1 h-14 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
+                id="location"
+                type="text"
+                placeholder="San Diego"
+                className="mt-1 h-12 w-full rounded-[5px] bg-[#ECECEC] px-4 text-base text-[#939191] placeholder:text-[#939191] focus:outline-none focus:ring-2 focus:ring-[#0085EA]"
               />
             </div>
 
-            <div className="flex justify-end pt-2">
+            {/* Next button */}
+            <div className="flex justify-end pt-1">
               <button
                 type="submit"
                 className="rounded-xl bg-[#003AA0] px-10 py-3 text-lg font-normal text-white transition-colors duration-200 hover:bg-[#002f81]"

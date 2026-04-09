@@ -1,23 +1,5 @@
 import logo from "../assets/white-logo.svg";
 
-const robustLinks = [
-  "Security & Protection",
-  "Kitchen",
-  "Bathrooms & Toilets",
-  "Bedrooms & Support",
-  "Doors & Access",
-  "Assistive technology",
-];
-
-const residentLinks = [
-  "Lounge Rooms",
-  "Home office/ Tech Room",
-  "Doors & Access",
-  "Garage",
-  "Bedrooms & Support",
-  "Bathrooms & Toilets",
-];
-
 function FacebookIcon() {
   return (
     <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
@@ -45,127 +27,146 @@ function TiktokIcon() {
 function Footer() {
   return (
     <footer
-      className="w-full px-5 py-8 text-white sm:px-8 lg:px-12 xl:px-16"
-      style={{ backgroundColor: "#141E68", fontFamily: "Inter, sans-serif" }}
+      className="w-full text-white"
+      style={{ backgroundColor: "#0A1553", fontFamily: "Inter, sans-serif" }}
     >
-      <div className="mx-auto max-w-7xl">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_1.7fr]">
-          <div>
+      {/* Main content */}
+      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8 xl:px-16">
+        <div className="grid gap-12 lg:grid-cols-[auto_1fr]">
+
+          {/* Left: Logo + Contact */}
+          <div className="flex flex-col gap-3">
             <img
               src={logo}
               alt="Safe Haven Housing"
-              className="h-14 w-auto sm:h-16"
+              className="h-16 w-auto"
             />
-            <p className="mt-5 max-w-sm text-[14px] leading-5 text-white/70 italic">
-              Safe Haven Housing is not an SDA provider, we provide customised
-              Super Robust and High Physical Support SDA homes. We collaborate
-              and align with the right SDA provider to look after the home.
-            </p>
 
-            <div className="mt-5 space-y-4 text-[15px]">
+            <div className="mt-4 flex flex-col gap-3 text-[18px]" style={{ fontFamily: "DM Sans, sans-serif" }}>
+              {/* Phone */}
               <div>
-                <p className="font-semibold text-white">Phone:</p>
-                <a href="tel:0408791489" className="mt-1 inline-block text-white/90">
-                  0408 79 14 89
-                </a>
+                <p>
+                  <span className="font-bold">Phone:</span>
+                  <br />
+                  <a href="tel:0408791489" className="font-normal">0408 79 1 489</a>
+                </p>
               </div>
+              <div className="h-px w-[100px] bg-white" />
+
+              {/* Email */}
               <div>
-                <p className="font-semibold text-white">Email:</p>
+                <p className="font-bold">Email:</p>
                 <a
                   href="mailto:admin@safehavenhousing.com.au"
-                  className="mt-1 inline-block text-white/90 underline underline-offset-2"
+                  className="font-normal underline"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   admin@safehavenhousing.com.au
                 </a>
               </div>
+              <div className="h-px w-[100px] bg-white" />
+
+              {/* Website */}
               <a
                 href="https://safehavenhousing.com.au"
-                className="inline-block text-white/90"
+                className="font-medium"
+                target="_blank"
+                rel="noreferrer"
               >
                 safehavenhousing.com.au
               </a>
             </div>
           </div>
 
-          <div className="flex flex-col justify-between">
-            <div className="rounded-2xl border border-white/30 px-2 py-2 sm:px-3">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                <input
-                  type="text"
-                  placeholder="Write you message here!"
-                  className="h-12 flex-1 bg-transparent px-4 text-[18px] text-white placeholder:text-white/55 focus:outline-none"
-                />
-                <button
-                  type="button"
-                  className="inline-flex h-12 items-center justify-center rounded-xl bg-white px-6 text-base font-medium shadow-sm"
-                  style={{ color: "#1A226B", fontFamily: "Public Sans, sans-serif" }}
-                >
-                  Enquire Now
-                </button>
-              </div>
-            </div>
+          {/* Right: Link columns */}
+          <div className="flex flex-col gap-8 sm:flex-row sm:gap-16 lg:justify-end lg:py-4">
 
-            <div className="mt-10 grid gap-8 md:grid-cols-2">
-              <div>
-                <h3 className="text-[1.1rem] font-semibold text-white">Why Safe Haven</h3>
-                <h4 className="mt-4 text-[1.1rem] font-semibold text-white">
-                  Super Robust SDA Homes
-                </h4>
-                <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-[13px] text-white/80">
-                  {robustLinks.map((item) => (
-                    <p key={item}>{item}</p>
-                  ))}
+            {/* Super Robust SDA Homes */}
+            <div className="flex flex-col gap-4">
+              <p className="text-[20px] font-semibold text-white">Super Robust SDA Homes</p>
+              <div className="flex gap-4 text-[14px] font-normal text-white">
+                <div className="flex flex-col gap-2 w-[140px]">
+                  <p>Security &amp; Protection</p>
+                  <p>Bathrooms &amp; Toilets</p>
+                  <p>Doors &amp; Access</p>
                 </div>
-              </div>
-
-              <div>
-                <h3 className="text-[1.1rem] font-semibold text-white">
-                  What Residents Say
-                </h3>
-                <h4 className="mt-4 text-[1.1rem] font-semibold text-white">
-                  High Physical Support SDA homes
-                </h4>
-                <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-[13px] text-white/80">
-                  {residentLinks.map((item) => (
-                    <p key={item}>{item}</p>
-                  ))}
+                <div className="flex flex-col gap-2 w-[138px]">
+                  <p>Kitchen</p>
+                  <p>Bedrooms &amp; Support</p>
+                  <p>Assistive technology</p>
                 </div>
               </div>
             </div>
+
+            {/* High Physical Support SDA homes */}
+            <div className="flex flex-col gap-4">
+              <p className="text-[20px] font-semibold text-white">High Physical Support SDA homes</p>
+              <div className="flex gap-4 text-[14px] font-normal text-white">
+                <div className="flex flex-col gap-2 w-[138px]">
+                  <p>Lounge Rooms</p>
+                  <p>Doors &amp; Access</p>
+                  <p>Bedrooms &amp; Support</p>
+                </div>
+                <div className="flex flex-col gap-2 w-[164px]">
+                  <p>Home office/ Tech Room</p>
+                  <p>Garage</p>
+                  <p>Bathrooms &amp; Toilets</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+      </div>
 
-        <div className="mt-10 border-t border-white/40 pt-5">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex items-center gap-3 text-white">
-              <a
-                href="#"
-                className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white/14"
-              >
-                <FacebookIcon />
-              </a>
-              <a
-                href="#"
-                className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white/14"
-              >
-                <InstagramIcon />
-              </a>
-              <a
-                href="#"
-                className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white/14"
-              >
-                <TiktokIcon />
-              </a>
-            </div>
+      {/* Bottom bar */}
+      <div className="border-t border-white/30">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 px-6 py-6 sm:flex-row sm:justify-between lg:px-8 xl:px-16">
 
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[15px] text-white/90">
-              <a href="#">Terms of Service</a>
-              <a href="#">Privacy Policy</a>
-              <p>
-                © 2026 <span className="italic">Safe Haven.</span> All rights reserved.
-              </p>
-            </div>
+          {/* Social icons */}
+          <div className="flex items-center gap-3 text-white">
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
+            >
+              <FacebookIcon />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              href="#"
+              aria-label="TikTok"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
+            >
+              <TiktokIcon />
+            </a>
           </div>
+
+          {/* Links + copyright */}
+          <div
+            className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[20px] text-white"
+            style={{ fontFamily: "DM Sans, sans-serif" }}
+          >
+            <div className="flex items-center gap-2">
+              <span className="h-1 w-1 rounded-full bg-white" />
+              <a href="#" className="leading-5">Terms of Service</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="h-1 w-1 rounded-full bg-white" />
+              <a href="#" className="leading-5">Privacy Policy</a>
+            </div>
+            <p className="leading-5">
+              © 2026 <em>Safe Haven</em>. All rights reserved.
+            </p>
+          </div>
+
         </div>
       </div>
     </footer>

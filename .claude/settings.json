@@ -22,7 +22,8 @@
       "Bash(sort -k2)",
       "Bash(npm run:*)",
       "Bash(ls -la \"C:/Users/asus/Desktop/safeheaven/src/assets/icon-landlord\"*.png)",
-      "Bash(xxd)"
+      "Bash(xxd)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/f96907e3-d8ba-419e-94b9-586130635b12\" -o \"c:/Users/asus/Desktop/safeheaven/src/assets/robust-6.jpg\")"
     ]
   }
 }
