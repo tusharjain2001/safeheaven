@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp:*)",
+      "mcp__figma__get_design_context",
+      "Bash(curl -L -o \"figma-landlord-1.jpg\" \"https://www.figma.com/api/mcp/asset/3154249b-e882-49b9-9aff-82425684f3a9\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-landlord-2.jpg\" \"https://www.figma.com/api/mcp/asset/65d422cd-42f5-4d54-9596-5179b65a5b77\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-landlord-3.jpg\" \"https://www.figma.com/api/mcp/asset/cc8d7ecf-9048-484b-82ff-6c35d973c47f\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-landlord-4.jpg\" \"https://www.figma.com/api/mcp/asset/3f800ed3-d38f-42b6-9660-06d771bbfac9\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-landlord-5.jpg\" \"https://www.figma.com/api/mcp/asset/70b86067-ff93-4f3d-acef-e2a6748ea1d6\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-icon-1.tmp\" \"https://www.figma.com/api/mcp/asset/a57aac99-769c-4aba-9f00-f911f45cb3ef\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-icon-2.tmp\" \"https://www.figma.com/api/mcp/asset/ccca3357-4f4b-414b-ad04-cdebe51a5440\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-icon-3.tmp\" \"https://www.figma.com/api/mcp/asset/2a79ccc8-9060-4abf-b6b3-23d7f6ddcad6\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-icon-4.tmp\" \"https://www.figma.com/api/mcp/asset/03de6488-8376-4d45-969a-ef787bdde7ed\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(curl -L -o \"figma-icon-5.tmp\" \"https://www.figma.com/api/mcp/asset/2ce9edee-c718-490c-be45-aa146e0728a1\" -w \"%{http_code} %{content_type}\\\\n\" -s)",
+      "Bash(mv figma-icon-1.tmp figma-icon-1.svg)",
+      "Bash(mv figma-icon-2.tmp figma-icon-2.svg)",
+      "Bash(mv figma-icon-3.tmp figma-icon-3.svg)",
+      "Bash(mv figma-icon-4.tmp figma-icon-4.svg)",
+      "Bash(mv figma-icon-5.tmp figma-icon-5.svg)",
+      "Bash(ls -la landlord-*.jpg landlord-*.png)",
+      "Bash(ls -la icon-landlord-*.svg)",
+      "Bash(ls -la figma-landlord-*.jpg figma-landlord-*.png)",
+      "Bash(ls -la figma-icon-*.svg)"
+    ]
+  }
+}

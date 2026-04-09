@@ -52,11 +52,11 @@ function PhotoCard({ image, icon, caption }) {
       <img
         src={image}
         alt={caption}
-        className="h-[300px] w-full object-cover sm:h-[340px]"
+        className="h-[360px] w-full object-cover"
       />
-      <div className="absolute bottom-4 left-4 flex w-[58%] flex-col gap-3 rounded-[10px] border border-[#D7EEFF] bg-white/90 p-4">
+      <div className="absolute bottom-4 left-4 flex w-[52%] flex-col gap-3 rounded-[10px] border border-[#D7EEFF] bg-[rgba(252,250,250,0.9)] p-4">
         <img src={icon} alt="" aria-hidden="true" className="h-10 w-10 object-contain" />
-        <p className="text-[15px] leading-6 text-[#191816]">{caption}</p>
+        <p className="text-[18px] leading-6 text-[#191816]">{caption}</p>
       </div>
     </div>
   );
@@ -75,7 +75,7 @@ function WhySafeHavenSection() {
             Why Safe Haven
           </span>
           <h2
-            className="mt-5 max-w-3xl text-4xl font-bold leading-tight text-[#0A1553] sm:text-[3rem] sm:leading-[1.1]"
+            className="mt-5 max-w-3xl text-4xl font-bold leading-tight text-[#0A1553] lg:text-[56px] lg:leading-[61px]"
             style={{ fontFamily: "Public Sans, sans-serif" }}
           >
             The only SDA LANDLORD that truly tailors every home to you

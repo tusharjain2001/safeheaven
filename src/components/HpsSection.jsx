@@ -110,7 +110,7 @@ function HpsSection() {
 
       {/* Photo Grid */}
       <div className="mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-5 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-3">
           {photoCards.map((card) => (
             <div
               key={card.caption}
@@ -121,9 +121,9 @@ function HpsSection() {
                 alt={card.caption}
                 className="h-[280px] w-full object-cover"
               />
-              <div className="absolute bottom-3 left-3 rounded-[12px] bg-white/90 px-4 py-2">
+              <div className="absolute bottom-3 left-3 rounded-[12px] bg-[rgba(252,250,250,0.9)] px-4 py-2">
                 <p
-                  className="text-[15px] text-[#191816]"
+                  className="text-[16px] leading-10 text-[#191816]"
                   style={{ fontFamily: "Public Sans, sans-serif" }}
                 >
                   {card.caption}
