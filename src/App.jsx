@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import DesignSection from "./components/DesignSection";
+import HomeShowcaseSection from "./components/HomeShowcaseSection";
 import StepsSection from "./components/StepsSection";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <main>
         <DesignSection />
         <StepsSection />
+        <HomeShowcaseSection />
       </main>
     </div>
   );
