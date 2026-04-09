@@ -16,10 +16,18 @@ function InstagramIcon() {
   );
 }
 
-function TiktokIcon() {
+function TwitterIcon() {
   return (
     <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
-      <path d="M14.2 3c.2 1.7 1.2 3.2 2.8 4 .9.5 1.9.8 3 .8v2.7a8.2 8.2 0 0 1-3.4-.8v5.8c0 3.3-2.6 5.6-5.8 5.6A5.8 5.8 0 0 1 5 15.3a5.8 5.8 0 0 1 7.3-5.6v2.8a3 3 0 1 0 1.9 2.8V3h2Z" />
+      <path d="M18.244 2H21l-6.02 6.88L22 22h-5.49l-4.3-6.314L6.684 22H3.927l6.44-7.36L2 2h5.63l3.887 5.703L18.244 2Zm-.967 18.338h1.527L6.8 3.574H5.161l12.116 16.764Z" />
+    </svg>
+  );
+}
+
+function YoutubeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
+      <path d="M21.6 7.2a2.99 2.99 0 0 0-2.1-2.12C17.64 4.6 12 4.6 12 4.6s-5.64 0-7.5.48A2.99 2.99 0 0 0 2.4 7.2 31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.8 2.99 2.99 0 0 0 2.1 2.12c1.86.48 7.5.48 7.5.48s5.64 0 7.5-.48a2.99 2.99 0 0 0 2.1-2.12A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" />
     </svg>
   );
 }
@@ -108,7 +116,7 @@ function Footer() {
 
           {/* Link columns */}
           <div
-            className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:justify-end lg:py-12"
+            className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:ml-auto lg:w-fit lg:gap-12 lg:py-12"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             {/* Super Robust SDA Homes */}
@@ -154,14 +162,41 @@ function Footer() {
 
           {/* Social icons */}
           <div className="flex items-center gap-3 text-white">
-            <a href="#" aria-label="Facebook" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25">
+            <a
+              href="https://www.facebook.com/safehavenhousing.au/"
+              aria-label="Facebook"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FacebookIcon />
             </a>
-            <a href="#" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25">
+            <a
+              href="https://www.instagram.com/safehavenhousing.au/"
+              aria-label="Instagram"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
+              target="_blank"
+              rel="noreferrer"
+            >
               <InstagramIcon />
             </a>
-            <a href="#" aria-label="TikTok" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25">
-              <TiktokIcon />
+            <a
+              href="https://x.com/safehavenhouses"
+              aria-label="Twitter"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <TwitterIcon />
+            </a>
+            <a
+              href="https://www.youtube.com/@SafeHavenHousing"
+              aria-label="YouTube"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 transition-colors hover:bg-white/25"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <YoutubeIcon />
             </a>
           </div>
 
