@@ -22,8 +22,9 @@ function App() {
         <StepsSection />
         <WhySafeHavenSection />
         <HomeShowcaseSection />
-        <SuperRobustSection />
         <StandardsSection />
+
+        <SuperRobustSection />
         <HpsSection />
         <TestimonialsSection />
         <QuizSection />

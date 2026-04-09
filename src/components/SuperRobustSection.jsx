@@ -15,9 +15,9 @@ const photoCards = [
   { image: robust1, caption: "Polycarbonate Protected Appliances" },
   { image: robust2, caption: "Security Systems" },
   { image: robust3, caption: "Vandal Proof Bathrooms" },
-  { image: robust4, caption: "Lockable Kitchen to keep everyone safe." },
-  { image: robust5, caption: "Resistant motorized internal blinds" },
-  { image: robust6, caption: "2.1m impact resistant wall" },
+  { image: robust4, caption: "Enclosed lockable kitchens for each participant" },
+  { image: robust5, caption: "Impact resistant motorised blinds" },
+  { image: robust6, caption: "2.1m impact resistant walls" },
 ];
 
 const featureCards = [
@@ -124,7 +124,7 @@ function SuperRobustSection() {
                 />
                 <div className="absolute bottom-3 left-3 max-w-[80%] rounded-[12px] bg-[rgba(252,250,250,0.9)] px-4 py-2 transition-transform duration-300 group-hover:-translate-y-1">
                   <p
-                    className="text-[14px] leading-6 text-[#191816] sm:text-[16px] sm:leading-10"
+                    className="text-[14px] text-[#191816] sm:text-[16px]"
                     style={{ fontFamily: "Public Sans, sans-serif" }}
                   >
                     {card.caption}

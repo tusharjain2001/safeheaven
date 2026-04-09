@@ -2,7 +2,7 @@ import landlord1 from "../assets/landlord-1.jpg";
 import landlord2 from "../assets/landlord-2.jpg";
 import landlord3 from "../assets/landlord-3.jpg";
 import landlord4 from "../assets/landlord-4.jpg";
-import landlord5 from "../assets/landlord-5.jpg";
+import landlord5 from "../assets/landlord5.svg";
 import landlord6 from "../assets/landlord-6.jpg";
 import iconLandlord1 from "../assets/icon-landlord-1.svg";
 import iconLandlord2 from "../assets/icon-landlord-2.svg";
