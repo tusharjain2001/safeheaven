@@ -1,13 +1,10 @@
-import heroVideoThumb from "../assets/hero-video-thumb.jpg";
-import iconPlay from "../assets/icon-play.svg";
-
 function HeroSection() {
   return (
     <section
       className="w-full bg-[#EAF6FF] px-4 py-8 sm:px-6 sm:py-10 lg:px-8 xl:px-10"
       style={{ fontFamily: "Inter, sans-serif" }}
     >
-      <div className="mx-auto grid max-w-[1320px] items-start gap-8 lg:grid-cols-[minmax(0,600px)_490px] lg:justify-between lg:gap-14 xl:grid-cols-[minmax(0,620px)_520px]">
+      <div className="mx-auto grid max-w-[1320px] items-start gap-8 lg:items-stretch lg:grid-cols-[minmax(0,600px)_490px] lg:justify-between lg:gap-14 xl:grid-cols-[minmax(0,620px)_520px]">
         <div className="flex max-w-[620px] flex-col pt-1 lg:pt-2">
           <h1
             className="max-w-[650px] text-[2.25rem] font-bold leading-[1.2] tracking-[-0.045em] text-[#142774] sm:text-[3rem] lg:text-[3rem] xl:text-[3.25rem]"
@@ -33,32 +30,16 @@ function HeroSection() {
             more space, more safety and more freedom.
           </p>
 
-          <div className="group mt-6 self-start overflow-hidden rounded-[18px] border-2 border-[#17307C] shadow-[0_10px_24px_rgba(16,35,107,0.12)] transition-shadow duration-300 hover:shadow-[0_18px_40px_rgba(16,35,107,0.22)]">
-            <div className="relative">
-              <img
-                src={heroVideoThumb}
-                alt="Safe Haven home tour video"
-                className=" w-full max-w-[580px] object-cover xl:w-[580px]"
+          <div className="mt-6 w-full max-w-[580px] self-start overflow-hidden rounded-[18px] border-2 border-[#17307C] shadow-[0_10px_24px_rgba(16,35,107,0.12)] transition-shadow duration-300 hover:shadow-[0_18px_40px_rgba(16,35,107,0.22)] lg:flex-1">
+            <div className="aspect-video w-full bg-[#0A1553] lg:h-full lg:min-h-[520px] lg:aspect-auto">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/RAYOj94JsxI?rel=0"
+                title="Safe Haven Housing hero video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button
-                  type="button"
-                  className="flex items-center gap-3 rounded-full border border-white/90 bg-black/58 py-2 pl-2 pr-5 text-white shadow-lg backdrop-blur-[1px] transition-all duration-200 hover:scale-105 hover:bg-black/70 active:scale-95"
-                >
-                  <img
-                    src={iconPlay}
-                    alt=""
-                    aria-hidden="true"
-                    className="h-10 w-10 object-contain"
-                  />
-                  <span
-                    className="text-[1rem] font-bold sm:text-[1.15rem]"
-                    style={{ fontFamily: "Public Sans, sans-serif" }}
-                  >
-                    Watch Now
-                  </span>
-                </button>
-              </div>
             </div>
           </div>
         </div>
