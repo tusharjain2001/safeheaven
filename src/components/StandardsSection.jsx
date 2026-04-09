@@ -37,7 +37,7 @@ function StandardsSection() {
         </div>
 
         <div
-          className="rounded-[1.3rem] px-6 py-6 shadow-[0_18px_40px_rgba(0,0,0,0.18)] sm:px-8 sm:py-8"
+          className="rounded-[1.3rem] px-6 py-6 shadow-[0_18px_40px_rgba(0,0,0,0.18)] transition-all duration-300 hover:shadow-[0_24px_56px_rgba(0,0,0,0.28)] sm:px-8 sm:py-8"
           style={{ backgroundColor: "#FFFFFF2E" }}
         >
           <h3

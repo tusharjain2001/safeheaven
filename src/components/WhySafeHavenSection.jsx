@@ -48,15 +48,17 @@ const photoCards = [
 
 function PhotoCard({ image, icon, caption }) {
   return (
-    <div className="relative overflow-hidden rounded-[12px]">
-      <img
-        src={image}
-        alt={caption}
-        className="h-[360px] w-full object-cover"
-      />
-      <div className="absolute bottom-4 left-4 flex w-[65%] flex-col gap-3 rounded-[10px] border border-[#D7EEFF] bg-[rgba(252,250,250,0.9)] p-4 sm:w-[52%]">
-        <img src={icon} alt="" aria-hidden="true" className="h-10 w-10 object-contain" />
-        <p className="text-[18px] leading-6 text-[#191816]">{caption}</p>
+    <div className="group rounded-[12px] shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="relative overflow-hidden rounded-[12px]">
+        <img
+          src={image}
+          alt={caption}
+          className="h-[360px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute bottom-4 left-4 flex w-[65%] flex-col gap-3 rounded-[10px] border border-[#D7EEFF] bg-[rgba(252,250,250,0.9)] p-4 transition-transform duration-300 group-hover:-translate-y-1 sm:w-[52%]">
+          <img src={icon} alt="" aria-hidden="true" className="icon-bounce h-10 w-10 object-contain" />
+          <p className="text-[18px] leading-6 text-[#191816]">{caption}</p>
+        </div>
       </div>
     </div>
   );

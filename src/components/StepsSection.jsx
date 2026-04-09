@@ -30,12 +30,12 @@ function StepsSection() {
         {stepCards.map((card) => (
           <article
             key={card.text}
-            className="flex items-center gap-4 rounded-[10px] bg-white px-5 py-4 shadow-[0_4px_10px_rgba(0,0,0,0.2)]"
+            className="group flex items-center gap-4 rounded-[10px] bg-white px-5 py-4 shadow-[0_4px_10px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_28px_rgba(0,0,0,0.22)]"
           >
             <img
               src={card.icon}
               alt={card.alt}
-              className="h-7 w-7 shrink-0 object-contain"
+              className="icon-bounce h-7 w-7 shrink-0 object-contain"
             />
             <p
               className="text-[1.02rem] font-medium leading-6 text-black"

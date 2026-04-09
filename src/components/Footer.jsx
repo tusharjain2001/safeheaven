@@ -37,7 +37,7 @@ function Footer() {
           <img
             src={logo}
             alt="Safe Haven Housing"
-            className="h-16 w-auto sm:h-20"
+            className="h-16 w-auto sm:h-16"
           />
 
           {/* Right column: enquire bar + disclaimer */}

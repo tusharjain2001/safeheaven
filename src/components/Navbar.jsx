@@ -94,13 +94,13 @@ function Navbar() {
         <div className="flex shrink-0 items-center gap-3">
           <a
             href="#"
-            className="inline-flex items-center justify-center rounded-xl border border-[#003AA0] px-5 py-3 text-sm font-semibold text-[#003AA0] transition-all hover:bg-[#003AA0] hover:text-white"
+            className="inline-flex items-center justify-center rounded-xl border border-[#003AA0] px-5 py-3 text-sm font-semibold text-[#003AA0] transition-all duration-200 hover:bg-[#003AA0] hover:text-white active:scale-95"
           >
             Let&apos;s Customise
           </a>
           <a
             href="#"
-            className="inline-flex items-center justify-center rounded-xl bg-[#003AA0] px-5 py-3 text-sm font-semibold text-white transition-all hover:bg-[#002f81]"
+            className="inline-flex items-center justify-center rounded-xl bg-[#003AA0] px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#002f81] hover:shadow-lg active:scale-95"
           >
             Enquire Now
           </a>

@@ -20,14 +20,14 @@ function QuizSection() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
                 href="#"
-                className="inline-flex items-center justify-center rounded-xl border border-white px-5 py-3 text-base font-medium text-white transition-colors duration-200 hover:bg-white hover:text-[#0049C8]"
+                className="inline-flex items-center justify-center rounded-xl border border-white px-5 py-3 text-base font-medium text-white transition-all duration-200 hover:bg-white hover:text-[#0049C8] active:scale-95"
                 style={{ fontFamily: "Public Sans, sans-serif" }}
               >
                 Enquire Now
               </a>
               <a
                 href="#"
-                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-base font-medium shadow-[0_12px_28px_rgba(0,0,0,0.16)] transition-transform duration-200 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-base font-medium shadow-[0_12px_28px_rgba(0,0,0,0.16)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(0,0,0,0.22)] active:scale-95"
                 style={{ color: "#0049C8", fontFamily: "Public Sans, sans-serif" }}
               >
                 Take the Quick Quiz

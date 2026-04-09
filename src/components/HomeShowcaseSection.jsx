@@ -25,11 +25,11 @@ function HomeShowcaseSection() {
           </a>
         </div>
 
-        <div className="overflow-hidden rounded-[1.35rem] shadow-[0_16px_40px_rgba(25,24,22,0.12)]">
+        <div className="group overflow-hidden rounded-[1.35rem] shadow-[0_16px_40px_rgba(25,24,22,0.12)] transition-shadow duration-300 hover:shadow-[0_24px_56px_rgba(25,24,22,0.2)]">
           <img
             src={home}
             alt="Accessible Safe Haven home exterior"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
         </div>
       </div>

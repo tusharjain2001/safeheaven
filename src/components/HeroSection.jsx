@@ -33,7 +33,7 @@ function HeroSection() {
             more space, more safety and more freedom.
           </p>
 
-          <div className="mt-6 self-start overflow-hidden rounded-[18px] border-2 border-[#17307C] shadow-[0_10px_24px_rgba(16,35,107,0.12)]">
+          <div className="group mt-6 self-start overflow-hidden rounded-[18px] border-2 border-[#17307C] shadow-[0_10px_24px_rgba(16,35,107,0.12)] transition-shadow duration-300 hover:shadow-[0_18px_40px_rgba(16,35,107,0.22)]">
             <div className="relative">
               <img
                 src={heroVideoThumb}
@@ -43,7 +43,7 @@ function HeroSection() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <button
                   type="button"
-                  className="flex items-center gap-3 rounded-full border border-white/90 bg-black/58 py-2 pl-2 pr-5 text-white shadow-lg backdrop-blur-[1px] transition-colors duration-200 hover:bg-black/70"
+                  className="flex items-center gap-3 rounded-full border border-white/90 bg-black/58 py-2 pl-2 pr-5 text-white shadow-lg backdrop-blur-[1px] transition-all duration-200 hover:scale-105 hover:bg-black/70 active:scale-95"
                 >
                   <img
                     src={iconPlay}

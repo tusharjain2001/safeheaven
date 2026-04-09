@@ -114,20 +114,22 @@ function HpsSection() {
           {photoCards.map((card) => (
             <div
               key={card.caption}
-              className="relative overflow-hidden rounded-[12px]"
+              className="group rounded-[12px] shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
             >
-              <img
-                src={card.image}
-                alt={card.caption}
-                className="h-[220px] w-full object-cover sm:h-[280px]"
-              />
-              <div className="absolute bottom-3 left-3 max-w-[80%] rounded-[12px] bg-[rgba(252,250,250,0.9)] px-4 py-2">
-                <p
-                  className="text-[14px] leading-6 text-[#191816] sm:text-[16px] sm:leading-10"
-                  style={{ fontFamily: "Public Sans, sans-serif" }}
-                >
-                  {card.caption}
-                </p>
+              <div className="relative overflow-hidden rounded-[12px]">
+                <img
+                  src={card.image}
+                  alt={card.caption}
+                  className="h-[220px] w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[280px]"
+                />
+                <div className="absolute bottom-3 left-3 max-w-[80%] rounded-[12px] bg-[rgba(252,250,250,0.9)] px-4 py-2 transition-transform duration-300 group-hover:-translate-y-1">
+                  <p
+                    className="text-[14px] leading-6 text-[#191816] sm:text-[16px] sm:leading-10"
+                    style={{ fontFamily: "Public Sans, sans-serif" }}
+                  >
+                    {card.caption}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
@@ -151,14 +153,14 @@ function HpsSection() {
           {featureCards.map((card) => (
             <div
               key={card.title}
-              className="flex flex-col gap-3 overflow-hidden rounded-[10px] bg-white p-4"
+              className="group flex flex-col gap-3 overflow-hidden rounded-[10px] bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
             >
-              <div className="flex items-center gap-3 rounded-[12px] bg-[#D7EEFF]/50 p-2">
+              <div className="flex items-center gap-3 rounded-[12px] bg-[#D7EEFF]/50 p-2 transition-colors duration-300 group-hover:bg-[#D7EEFF]/80">
                 <img
                   src={card.icon}
                   alt=""
                   aria-hidden="true"
-                  className="h-10 w-10 shrink-0 object-contain"
+                  className="icon-bounce h-10 w-10 shrink-0 object-contain"
                 />
                 <span
                   className="text-lg font-semibold text-[#191816]"

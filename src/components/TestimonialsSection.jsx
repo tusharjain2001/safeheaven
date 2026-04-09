@@ -24,7 +24,7 @@ const row2 = [
 function TestimonialCard({ quote }) {
   return (
     <div
-      className="flex h-[190px] flex-col justify-center gap-4 rounded-[10px] bg-white px-7 py-5 shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
+      className="flex h-[190px] flex-col justify-center gap-4 rounded-[10px] bg-white px-7 py-5 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
       style={{ width: `${CARD_W}px`, fontFamily: "Inter, sans-serif", flexShrink: 0 }}
     >
       <img src={iconQuote} alt="" aria-hidden="true" className="h-8 w-10 object-contain" />
@@ -49,8 +49,8 @@ function MarqueeRow({ quotes, direction }) {
   };
 
   return (
-    <div style={{ overflow: "hidden" }}>
-      <div style={containerStyle}>
+    <div className="marquee-track" style={{ overflow: "hidden" }}>
+      <div className="marquee-inner" style={containerStyle}>
         {tripled.map((quote, i) => (
           <div key={i} style={{ marginRight: `${CARD_GAP}px`, flexShrink: 0 }}>
             <TestimonialCard quote={quote} />
