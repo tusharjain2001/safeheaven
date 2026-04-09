@@ -30,68 +30,95 @@ function Footer() {
       className="w-full text-white"
       style={{ backgroundColor: "#0A1553", fontFamily: "Inter, sans-serif" }}
     >
-      {/* Main content */}
-      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8 xl:px-16">
-        <div className="grid gap-12 lg:grid-cols-[auto_1fr]">
+      <div className="mx-auto max-w-7xl px-6 pt-10 pb-0 lg:px-8 xl:px-16">
 
-          {/* Left: Logo + Contact */}
-          <div className="flex flex-col gap-3">
-            <img
-              src={logo}
-              alt="Safe Haven Housing"
-              className="h-16 w-auto"
-            />
+        {/* Top row: Logo left | Enquire Now bar + disclaimer right */}
+        <div className="grid items-start gap-8 lg:grid-cols-[auto_1fr]">
+          <img
+            src={logo}
+            alt="Safe Haven Housing"
+            className="h-20 w-auto"
+          />
 
-            <div className="mt-4 flex flex-col gap-3 text-[18px]" style={{ fontFamily: "DM Sans, sans-serif" }}>
-              {/* Phone */}
-              <div>
-                <p>
-                  <span className="font-bold">Phone:</span>
-                  <br />
-                  <a href="tel:0408791489" className="font-normal">0408 79 1 489</a>
-                </p>
-              </div>
-              <div className="h-px w-[100px] bg-white" />
+          {/* Right column: Enquire bar + disclaimer — all pinned to the right */}
+          <div className="flex flex-col items-end gap-3">
+            {/* Enquire Now bar */}
+            <div
+              className="flex items-center justify-between rounded-2xl border border-[rgba(215,238,255,0.5)] px-2 py-3 w-[657px]"
+              style={{ fontFamily: "Public Sans, sans-serif" }}
+            >
+              <input
+                type="text"
+                placeholder="Write you message here!"
+                className="flex-1 bg-transparent px-3 py-1 text-[16px] text-white/50 placeholder:text-white/50 focus:outline-none"
+              />
+              <button
+                type="button"
+                className="rounded-xl bg-[#FCFAFA] px-5 py-2 text-[16px] font-normal text-[#0A1553] transition-opacity hover:opacity-90"
+              >
+                Enquire Now
+              </button>
+            </div>
 
-              {/* Email */}
-              <div>
-                <p className="font-bold">Email:</p>
-                <a
-                  href="mailto:admin@safehavenhousing.com.au"
-                  className="font-normal underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  admin@safehavenhousing.com.au
-                </a>
-              </div>
-              <div className="h-px w-[100px] bg-white" />
+            {/* Disclaimer — full width, right-aligned text, 2 lines */}
+            <p
+              className="w-full text-right text-[15px] font-semibold text-[#a2cbeb] mt-[40px]"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Safe Haven Housing is not an SDA provider, we provide customised Super Robust and High Physical
+              <br />
+              Support SDA homes. We collaborate and align with the right SDA provider to look after the home.
+            </p>
+          </div>
+        </div>
 
-              {/* Website */}
+        {/* Main content: Contact left | Link columns right */}
+        <div className="mt-10 grid gap-8 lg:grid-cols-[295px_1fr]">
+
+          {/* Left: Contact — 295px wide, 12px gap, DM Sans 18px */}
+          <div className="flex flex-col gap-[12px] text-[18px]" style={{ fontFamily: "DM Sans, sans-serif" }}>
+            <div>
+              <p className="font-bold leading-normal">Phone:</p>
+              <a href="tel:1300111744" className="font-normal leading-normal">1300 111 744</a>
+            </div>
+            <div className="h-px w-[100px] bg-white" />
+
+            <div>
+              <p className="font-bold leading-normal">Email:</p>
               <a
-                href="https://safehavenhousing.com.au"
-                className="font-medium"
+                href="mailto:admin@safehavenhousing.com.au"
+                className="font-normal underline leading-normal"
                 target="_blank"
                 rel="noreferrer"
               >
-                safehavenhousing.com.au
+                admin@safehavenhousing.com.au
               </a>
             </div>
+            <div className="h-px w-[100px] bg-white" />
+
+            <a
+              href="https://safehavenhousing.com.au"
+              className="font-medium leading-normal"
+              target="_blank"
+              rel="noreferrer"
+            >
+              safehavenhousing.com.au
+            </a>
           </div>
 
-          {/* Right: Link columns */}
-          <div className="flex flex-col gap-8 sm:flex-row sm:gap-16 lg:justify-end lg:py-4">
+          {/* Right: Link columns — 64px gap between groups, Inter */}
+          <div className="flex flex-col gap-[16px] sm:flex-row sm:gap-[64px] lg:justify-end lg:py-[48px]" style={{ fontFamily: "Inter, sans-serif" }}>
 
             {/* Super Robust SDA Homes */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-[16px]">
               <p className="text-[20px] font-semibold text-white">Super Robust SDA Homes</p>
-              <div className="flex gap-4 text-[14px] font-normal text-white">
-                <div className="flex flex-col gap-2 w-[140px]">
+              <div className="flex gap-[16px] text-[14px] font-normal text-white">
+                <div className="flex flex-col gap-[8px] w-[140px]">
                   <p>Security &amp; Protection</p>
                   <p>Bathrooms &amp; Toilets</p>
                   <p>Doors &amp; Access</p>
                 </div>
-                <div className="flex flex-col gap-2 w-[138px]">
+                <div className="flex flex-col gap-[8px] w-[138px]">
                   <p>Kitchen</p>
                   <p>Bedrooms &amp; Support</p>
                   <p>Assistive technology</p>
@@ -100,15 +127,15 @@ function Footer() {
             </div>
 
             {/* High Physical Support SDA homes */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-[16px]">
               <p className="text-[20px] font-semibold text-white">High Physical Support SDA homes</p>
-              <div className="flex gap-4 text-[14px] font-normal text-white">
-                <div className="flex flex-col gap-2 w-[138px]">
+              <div className="flex gap-[16px] text-[14px] font-normal text-white">
+                <div className="flex flex-col gap-[8px] w-[138px]">
                   <p>Lounge Rooms</p>
                   <p>Doors &amp; Access</p>
                   <p>Bedrooms &amp; Support</p>
                 </div>
-                <div className="flex flex-col gap-2 w-[164px]">
+                <div className="flex flex-col gap-[8px] w-[164px]">
                   <p>Home office/ Tech Room</p>
                   <p>Garage</p>
                   <p>Bathrooms &amp; Toilets</p>
@@ -121,7 +148,7 @@ function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/30">
+      <div className="mt-10 border-t border-white/30">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 px-6 py-6 sm:flex-row sm:justify-between lg:px-8 xl:px-16">
 
           {/* Social icons */}
@@ -156,13 +183,13 @@ function Footer() {
           >
             <div className="flex items-center gap-2">
               <span className="h-1 w-1 rounded-full bg-white" />
-              <a href="#" className="leading-5">Terms of Service</a>
+              <a href="#">Terms of Service</a>
             </div>
             <div className="flex items-center gap-2">
               <span className="h-1 w-1 rounded-full bg-white" />
-              <a href="#" className="leading-5">Privacy Policy</a>
+              <a href="#">Privacy Policy</a>
             </div>
-            <p className="leading-5">
+            <p>
               © 2026 <em>Safe Haven</em>. All rights reserved.
             </p>
           </div>
