@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import DesignSection from "./components/DesignSection";
+import Footer from "./components/Footer";
 import HomeShowcaseSection from "./components/HomeShowcaseSection";
 import QuizSection from "./components/QuizSection";
 import StandardsSection from "./components/StandardsSection";
@@ -17,6 +18,8 @@ function App() {
         <StandardsSection />
         <QuizSection />
       </main>
+
+      <Footer />
     </div>
   );
 }
