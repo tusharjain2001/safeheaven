@@ -8,8 +8,8 @@ import iconLounge from "../assets/icon-hps-lounge.svg";
 import iconOffice from "../assets/icon-hps-office.svg";
 import iconDoor from "../assets/icon-hps-door.svg";
 import iconGarage from "../assets/icon-hps-garage.svg";
-import iconBath from "../assets/icon-hps-bath.svg";
-import iconBed from "../assets/icon-hps-bed.svg";
+import iconBath from "../assets/icon-robust-bath.svg";
+import iconBed from "../assets/icon-robust-bed.svg";
 
 const photoCards = [
   { image: hps1, caption: "Main Lounge Room" },
