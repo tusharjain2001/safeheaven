@@ -38,7 +38,7 @@ function StepsSection() {
               className="h-7 w-7 shrink-0 object-contain"
             />
             <p
-              className="text-[1.02rem] font-medium leading-6 text-[#191816]"
+              className="text-[1.02rem] font-medium leading-6 text-black"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               {card.text}
