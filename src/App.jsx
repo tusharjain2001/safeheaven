@@ -1,10 +1,15 @@
 import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
 import DesignSection from "./components/DesignSection";
-import Footer from "./components/Footer";
-import HomeShowcaseSection from "./components/HomeShowcaseSection";
-import QuizSection from "./components/QuizSection";
-import StandardsSection from "./components/StandardsSection";
 import StepsSection from "./components/StepsSection";
+import WhySafeHavenSection from "./components/WhySafeHavenSection";
+import HomeShowcaseSection from "./components/HomeShowcaseSection";
+import SuperRobustSection from "./components/SuperRobustSection";
+import StandardsSection from "./components/StandardsSection";
+import HpsSection from "./components/HpsSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import QuizSection from "./components/QuizSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,10 +17,15 @@ function App() {
       <Navbar />
 
       <main>
+        <HeroSection />
         <DesignSection />
         <StepsSection />
+        <WhySafeHavenSection />
         <HomeShowcaseSection />
+        <SuperRobustSection />
         <StandardsSection />
+        <HpsSection />
+        <TestimonialsSection />
         <QuizSection />
       </main>
 

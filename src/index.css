@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* Marquee uses --marquee-width (exact px) set inline per element */
+@keyframes marquee-ltr {
+  from { transform: translateX(calc(-1 * var(--marquee-width))); }
+  to   { transform: translateX(0px); }
+}
+
+@keyframes marquee-rtl {
+  from { transform: translateX(0px); }
+  to   { transform: translateX(calc(-1 * var(--marquee-width))); }
+}

@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_figma_figma__get_metadata",
+      "Read(//c/Users/asus/.claude/projects/c--Users-asus-Desktop-safeheaven/53fe841b-e206-4411-98d2-bd5dd09442d4/tool-results/**)",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); print\\(data[0]['text'][:3000]\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const data=JSON.parse\\(fs.readFileSync\\('C:/Users/asus/.claude/projects/c--Users-asus-Desktop-safeheaven/53fe841b-e206-4411-98d2-bd5dd09442d4/tool-results/mcp-plugin_figma_figma-get_metadata-1775712014485.txt'\\)\\); const text=data[0].text; console.log\\(text.substring\\(0, 5000\\)\\);\")",
+      "mcp__plugin_figma_figma__get_screenshot",
+      "mcp__plugin_figma_figma__get_design_context",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/65d2e7f8-744d-4c3c-a9c9-1933d4c65cc1\" -o hero-video-thumb.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/6831a970-0937-40fb-909f-596169164f68\" -o icon-play.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/97a09eda-f493-4708-ac47-4e8bb5792196\" -o landlord-1.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/dc141425-6bda-4f42-aaee-4add6dd72a13\" -o landlord-2.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/367c0988-1d1b-4d95-a6d1-e10dedda8beb\" -o landlord-3.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/250af385-3c6c-4d52-8218-013b624e7e53\" -o robust-1.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/8aa223d7-095b-42af-b813-1c9e580f860b\" -o robust-2.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/fb996fd2-1ab8-4167-a03a-3f8d2251b7fe\" -o robust-3.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/cd51659a-1489-4839-b32a-e2b297afd297\" -o robust-4.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/91a79121-0918-4c2f-9916-57438ab6d8af\" -o robust-5.jpg)",
+      "Bash(ls -la C:/Users/asus/Desktop/safeheaven/src/assets/*.jpg C:/Users/asus/Desktop/safeheaven/src/assets/*.png)",
+      "Read(//c/Users/asus/Desktop/safeheaven/**)",
+      "Bash(sort -k2)",
+      "Bash(npm run:*)",
+      "Bash(ls -la \"C:/Users/asus/Desktop/safeheaven/src/assets/icon-landlord\"*.png)",
+      "Bash(xxd)"
+    ]
+  }
+}
