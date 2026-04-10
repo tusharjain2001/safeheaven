@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import DesignSection from "./components/DesignSection";
+// import DesignSection from "./components/DesignSection";
 import StepsSection from "./components/StepsSection";
 import WhySafeHavenSection from "./components/WhySafeHavenSection";
 import HomeShowcaseSection from "./components/HomeShowcaseSection";
@@ -18,13 +18,14 @@ function App() {
 
       <main>
         <HeroSection />
-        <DesignSection />
+        {/* <DesignSection /> */}
         <StepsSection />
         <WhySafeHavenSection />
         <HomeShowcaseSection />
-        <StandardsSection />
+        
 
         <SuperRobustSection />
+        <StandardsSection />
         <HpsSection />
         <TestimonialsSection />
         <QuizSection />

@@ -64,7 +64,7 @@ function HeroSection() {
                   className="block text-[0.78rem] text-[#666666]"
                   htmlFor="firstName"
                 >
-                  Best Contact First Name *
+                  First name
                 </label>
                 <input
                   id="firstName"
@@ -78,7 +78,7 @@ function HeroSection() {
                   className="block text-[0.78rem] text-[#666666]"
                   htmlFor="lastName"
                 >
-                  Best Contact Last Name *
+                  Surname
                 </label>
                 <input
                   id="lastName"
@@ -95,7 +95,7 @@ function HeroSection() {
                   className="block text-[0.78rem] text-[#666666]"
                   htmlFor="phoneM"
                 >
-                  Best Phone Contact - M:
+                  Mobile
                 </label>
                 <input
                   id="phoneM"
@@ -109,7 +109,7 @@ function HeroSection() {
                   className="block text-[0.78rem] text-[#666666]"
                   htmlFor="phoneP"
                 >
-                  Best Phone Contact - P:
+                  Phone
                 </label>
                 <input
                   id="phoneP"
@@ -125,7 +125,7 @@ function HeroSection() {
                 className="block text-[0.78rem] text-[#666666]"
                 htmlFor="email"
               >
-                Best Email *
+                Email
               </label>
               <input
                 id="email"
@@ -204,7 +204,7 @@ function HeroSection() {
               <input
                 id="location"
                 type="text"
-                placeholder="Queensland"
+                placeholder="Melbourne"
                 className="mt-1 h-11 w-full rounded-[4px] border border-transparent bg-[#F1F1F1] px-3 text-[0.9rem] text-[#333] placeholder:text-[#A0A0A8] focus:border-[#3A95E8] focus:bg-white focus:outline-none"
               />
             </div>

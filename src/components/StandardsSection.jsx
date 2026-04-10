@@ -17,27 +17,9 @@ function StandardsSection() {
       className="w-full px-4 py-12 text-white sm:px-6 sm:py-16 lg:px-8 lg:py-20"
       style={{ backgroundColor: "#0A1553", fontFamily: "Inter, sans-serif" }}
     >
-      <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-14">
-        <div className="max-w-xl">
-          <h2 className="text-[1.9rem] font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-            Let&apos;s design A HOME, that is truly for YOU
-          </h2>
-          <p className="mt-5 max-w-lg text-base leading-7 text-white/82">
-            Our team is ready to listen to your needs, walk you through our
-            available properties, and begin creating a home that is truly
-            yours. The first step is simply reaching out.
-          </p>
-          <a
-            href="#"
-            className="mt-8 inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-base font-medium shadow-[0_10px_24px_rgba(0,0,0,0.18)] transition-transform duration-200 hover:-translate-y-0.5"
-            style={{ color: "#003AA0", fontFamily: "Public Sans, sans-serif" }}
-          >
-            Enquire Now
-          </a>
-        </div>
-
+      <div className="mx-auto flex max-w-7xl justify-center">
         <div
-          className="rounded-[1.3rem] px-6 py-6 shadow-[0_18px_40px_rgba(0,0,0,0.18)] transition-all duration-300 hover:shadow-[0_24px_56px_rgba(0,0,0,0.28)] sm:px-8 sm:py-8"
+          className="inline-block w-fit max-w-full rounded-[1.3rem] px-6 py-6 shadow-[0_18px_40px_rgba(0,0,0,0.18)] transition-all duration-300 hover:shadow-[0_24px_56px_rgba(0,0,0,0.28)] sm:px-8 sm:py-8"
           style={{ backgroundColor: "#FFFFFF2E" }}
         >
           <h3
@@ -49,7 +31,7 @@ function StandardsSection() {
 
           <div className="mt-6 space-y-3">
             {standards.map((item) => (
-              <div key={item} className="flex items-start gap-3">
+              <div key={item} className="flex max-w-fit items-start gap-3">
                 <span
                   className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full"
                   style={{ backgroundColor: "#FFFFFF4D" }}
