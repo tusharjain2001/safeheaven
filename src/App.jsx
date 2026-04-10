@@ -21,11 +21,12 @@ function App() {
         {/* <DesignSection /> */}
         <StepsSection />
         <WhySafeHavenSection />
+        <StandardsSection />
         <HomeShowcaseSection />
         
 
         <SuperRobustSection />
-        <StandardsSection />
+        
         <HpsSection />
         <TestimonialsSection />
         <QuizSection />

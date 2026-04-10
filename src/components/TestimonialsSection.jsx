@@ -68,7 +68,7 @@ function TestimonialsSection() {
       style={{ fontFamily: "Inter, sans-serif" }}
     >
       {/* Header */}
-      <div className="flex flex-col items-center px-4 text-center sm:px-6">
+      {/* <div className="flex flex-col items-center px-4 text-center sm:px-6">
         <span className="inline-flex items-center rounded-full border border-[#0049C8] px-5 py-2.5 text-base text-[#0049C8]">
           What Residents Say
         </span>
@@ -84,10 +84,10 @@ function TestimonialsSection() {
         <p className="mt-4 text-base text-[#0A1553] sm:text-lg">
           Real words from real participants living in their Safe Haven homes.
         </p>
-      </div>
+      </div> */}
 
       {/* Scrolling rows */}
-      <div className="mt-12 py-10" style={{ backgroundColor: "#D7EEFF" }}>
+      <div className="py-10" style={{ backgroundColor: "#D7EEFF" }}>
         <MarqueeRow quotes={row1} direction="ltr" />
         <div className="mt-5">
           <MarqueeRow quotes={row2} direction="rtl" />
