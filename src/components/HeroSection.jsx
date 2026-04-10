@@ -23,11 +23,11 @@ function HeroSection() {
             We Make The Home Fit You, Not You Fit The Home.
           </p>
 
-          <p className="mt-3 max-w-[570px] text-[1rem] leading-[1.5] text-[#142774]">
-            At Safe Haven Housing, we customise every home to suit your
-            individual needs. You request your requirements; we create your Safe
-            Haven SDA Home, designed with you in mind, meaning more privacy,
-            more space, more safety and more freedom.
+          <p className="mt-3 max-w-[570px] text-xs md:text-[1rem] leading-[1.5] text-[#142774]">
+            At Safe Haven Housing, we customise every home to suit your needs.
+            You request your customisation and we create your Safe Haven. <br />
+            <br />
+            More Privacy, More Space, More Safety and More Freedom.
           </p>
 
           <div className="mt-6 w-full max-w-[580px] self-start overflow-hidden rounded-[18px] border-2 border-[#17307C] shadow-[0_10px_24px_rgba(16,35,107,0.12)] transition-shadow duration-300 hover:shadow-[0_18px_40px_rgba(16,35,107,0.22)] lg:flex-1">
