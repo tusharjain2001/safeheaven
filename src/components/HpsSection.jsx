@@ -15,7 +15,7 @@ const photoCards = [
   { image: hps1, caption: "Main Lounge Room" },
   { image: hps2, caption: "Garage with Equipment Storage" },
   { image: hps3, caption: "Bedrooms fitted with Electric Hoist" },
-  { image: hps4, caption: "Extra Large Career Rooms to work and rest" },
+  { image: hps4, caption: "Extra Large Carer's Rooms to work and rest" },
   { image: hps5, caption: "Spacious Bathrooms with accessible cabinets" },
   { image: hps6, caption: "Custom Rooms- office, tech or own design" },
 ];
@@ -65,9 +65,9 @@ const featureCards = [
       "Ceiling mounted electric hoists",
       "Accessible storage",
       "Flexible configurations for equipment",
-      "Larger then average sda bedrooms",
-      "Careers room with work space and lockable storage",
-      "TV wall mounted in every bedroom including careers room",
+      "Larger than average SDA bedrooms",
+      "Carer's room with work space and lockable storage",
+      "TV wall mounted in every bedroom including carer's room",
     ],
   },
   {

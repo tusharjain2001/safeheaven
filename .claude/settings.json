@@ -23,7 +23,11 @@
       "Bash(npm run:*)",
       "Bash(ls -la \"C:/Users/asus/Desktop/safeheaven/src/assets/icon-landlord\"*.png)",
       "Bash(xxd)",
-      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/f96907e3-d8ba-419e-94b9-586130635b12\" -o \"c:/Users/asus/Desktop/safeheaven/src/assets/robust-6.jpg\")"
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/f96907e3-d8ba-419e-94b9-586130635b12\" -o \"c:/Users/asus/Desktop/safeheaven/src/assets/robust-6.jpg\")",
+      "Bash(python3 -c ':*)",
+      "Bash(pip install:*)",
+      "Bash(python3 -c \" import docx doc = docx.Document\\(r'C:/Users/asus/Downloads/Privacy_Policy_Safe_Haven_Housing.docx'\\) for para in doc.paragraphs: if para.text.strip\\(\\): print\\(repr\\(para.style.name\\) + ' | ' + para.text\\) \")",
+      "Bash(powershell -Command ':*)"
     ]
   }
 }

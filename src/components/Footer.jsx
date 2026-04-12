@@ -32,7 +32,7 @@ function YoutubeIcon() {
   );
 }
 
-function Footer() {
+function Footer({ onNavigate }) {
   return (
     <footer
       id="footer"
@@ -208,11 +208,11 @@ function Footer() {
           >
             <div className="flex items-center gap-2">
               <span className="h-1 w-1 rounded-full bg-white" />
-              <a href="#">Terms of Service</a>
+              <button onClick={() => onNavigate("terms")} className="hover:underline">Terms of Service</button>
             </div>
             <div className="flex items-center gap-2">
               <span className="h-1 w-1 rounded-full bg-white" />
-              <a href="#">Privacy Policy</a>
+              <button onClick={() => onNavigate("privacy")} className="hover:underline">Privacy Policy</button>
             </div>
             <p className="text-center">
               © 2026 <em>Safe Haven</em>. All rights reserved.

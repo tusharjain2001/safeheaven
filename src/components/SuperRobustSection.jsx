@@ -56,7 +56,7 @@ const featureCards = [
     icon: iconBed,
     title: "Bedrooms & Support",
     items: [
-      "Larger then standard SDA bedrooms",
+      "Larger than standard SDA bedrooms",
       "Heavy-duty lockable personal storage",
       "Support worker room with secure workplace and lockable storage",
     ],
@@ -74,7 +74,7 @@ const featureCards = [
     icon: iconTech,
     title: "Assistive Technology",
     items: [
-      "Intergrated tamper resistant smart home features",
+      "Integrated tamper resistant smart home features",
       "Motorized cordless blinds with no ligature risk",
       "External impact-resistant roller shutters",
       "Modern and comfortable — not clinical",
